@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.container {
+
+}
+
+.leaderboard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scores {
+
+}
+
+.score-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.score-title {
+
+}
