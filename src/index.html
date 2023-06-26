@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wbpack Exercise</title>
+</head>
+<body>
+  <main class="container">
+    <h1 class="main-title">Leaderboard</h1>
+    <section class="leaderboard">
+      <div class="scores">
+        <header class="score-header">
+          <h2 class="score-title">Recent scores</h2>
+          <button type="button">Refresh</button>
+        </header>
+        <ul class="table">
+          <li class="table-row">
+            <span class="table-cell">Name: 100</span>
+          </li>
+          <li class="table-row">
+            <span class="table-cell">Name: 53</span>
+          </li>
+          <li class="table-row">
+            <span class="table-cell">Name: 24</span>
+          </li>
+          <li class="table-row">
+            <span class="table-cell">Name: 66</span>
+          </li>
+          <li class="table-row">
+            <span class="table-cell">Name: 87</span>
+          </li>
+          <li class="table-row">
+            <span class="table-cell">Name: 323</span>
+          </li>
+        </ul>
+      </div>
+      <div class="scores">
+        <header class="score-header">
+          <h2 class="score-title">Add your score</h2>
+        </header>
+        <form id="scoreContent">
+          <div class="form-content">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="text" id="score" placeholder="Your score" required>
+            <button type="submit" id="btnAddBook">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>    
+  </main>
+</body>
+</html>
