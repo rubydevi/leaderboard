@@ -47,3 +47,17 @@ body {
 .table-cell:last-child {
   text-align: left;
 }
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px 10px;
+  background-color: #27262e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 4px 0 rgb(0 0 0);
+}
+
+button:hover {
+  background-color: #c62828;
+}
