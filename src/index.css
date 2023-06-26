@@ -1,9 +1,11 @@
 body {
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.container {
-
+.main-title {
+  padding: 2% 10%;
+  font-size: 3em;
 }
 
 .leaderboard {
@@ -12,7 +14,7 @@ body {
 }
 
 .scores {
-
+  width: 30%;
 }
 
 .score-header {
@@ -22,6 +24,26 @@ body {
   gap: 10px;
 }
 
-.score-title {
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid;
+}
 
+.table-row {
+  display: table-row;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+}
+
+.table-cell:last-child {
+  text-align: left;
 }
