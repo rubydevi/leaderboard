@@ -81,3 +81,7 @@ button:hover {
   color: #000;
   font-weight: 700;
 }
+
+.success-status {
+  color: green;
+}
