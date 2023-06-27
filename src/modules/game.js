@@ -46,3 +46,33 @@ export const fetchScores = async () => {
     return `Error fetching scores: ${error}`;
   }
 };
+
+export const submitScore = async (event) => {
+  event.preventDefault();
+  const nameInput = document.getElementById('name');
+  const scoreInput = document.getElementById('score');
+  const name = nameInput.value;
+  const score = scoreInput.value;
+
+  try {
+    const response = await fetch(`${baseURL}games/${gameId}/scores/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        user: name,
+        score: parseInt(score, 10),
+      }),
+    });
+    const data = await response.json();
+
+    nameInput.value = '';
+    scoreInput.value = '';
+    // fetchScores();
+    submitStatus();
+    return data.result;
+  } catch (error) {
+    return `Error submitting score: ${error}`;
+  }
+};
