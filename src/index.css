@@ -19,6 +19,19 @@ body {
   padding: 0 10%;
   font-size: 3em;
   margin: 0;
+  animation: glowBlink 4s infinite;
+}
+
+@keyframes glowBlink {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de;
+  }
 }
 
 .leaderboard {
