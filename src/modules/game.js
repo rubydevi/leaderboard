@@ -69,7 +69,6 @@ export const submitScore = async (event) => {
 
     nameInput.value = '';
     scoreInput.value = '';
-    // fetchScores();
     submitStatus();
     return data.result;
   } catch (error) {
