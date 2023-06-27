@@ -1,11 +1,24 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  color: #8a9ccd;
+  background-image: url('img/body.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.container {
+  background: #0000009c;
+  padding: 5%;
+  margin: 5%;
 }
 
 .main-title {
-  padding: 2% 10%;
+  padding: 0 10%;
   font-size: 3em;
+  margin: 0;
 }
 
 .leaderboard {
@@ -27,15 +40,18 @@ body {
 .table {
   display: table;
   width: 100%;
-  border-collapse: collapse;
-  border: 2px solid;
+  margin: 0;
+  padding: 0;
 }
 
 .table-row {
   display: table-row;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s, font-size 0.3s;
 }
 
 .table-row:nth-child(odd) {
+  color: #000;
   background-color: #f2f2f2;
 }
 
@@ -48,6 +64,20 @@ body {
   text-align: left;
 }
 
+.table-row:hover {
+  background-color: #c62828;
+  color: #fff;
+  font-size: larger;
+  transform: scale(1.05);
+}
+
+.table-row:active {
+  background-color: #000;
+  color: #fff;
+  font-size: larger;
+  transform: scale(0.95);
+}
+
 button {
   font-family: 'Courier New', Courier, monospace;
   padding: 5px 10px;
@@ -56,10 +86,18 @@ button {
   border: none;
   cursor: pointer;
   box-shadow: 3px 4px 0 rgb(0 0 0);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
   background-color: #c62828;
+  transform: scale(1.05);
+  box-shadow: 5px 6px 0 rgb(0 0 0);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 1px 2px 0 rgb(0 0 0);
 }
 
 .form-content {
@@ -83,5 +121,5 @@ button:hover {
 }
 
 .success-status {
-  color: green;
+  color: #00df00;
 }
