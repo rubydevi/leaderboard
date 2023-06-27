@@ -27,3 +27,22 @@ export const createGame = async () => {
     return `Error creating game: ${error}`;
   }
 };
+
+export const fetchScores = async () => {
+  try {
+    const response = await fetch(`${baseURL}games/${gameId}/scores/`);
+    const data = await response.json();
+    const scoreList = document.getElementById('scoreList');
+    scoreList.innerHTML = '';
+
+    data.result.forEach((score) => {
+      const li = document.createElement('li');
+      li.className = 'table-row';
+      li.innerHTML = `<span class="table-cell">${score.user}: ${score.score}</span>`;
+      scoreList.appendChild(li);
+    });
+    return 'Fetched all scores';
+  } catch (error) {
+    return `Error fetching scores: ${error}`;
+  }
+};
