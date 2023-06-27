@@ -1,6 +1,18 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  color: #8a9ccd;
+  background-image: url('img/body.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.container {
+  background: #0000009c;
+  padding: 5%;
+  margin: 5%;
 }
 
 .main-title {
