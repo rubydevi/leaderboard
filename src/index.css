@@ -40,15 +40,20 @@ body {
 .table {
   display: table;
   width: 100%;
-  border-collapse: collapse;
-  border: 2px solid;
+  /* border-collapse: collapse;
+  border: 2px solid; */
+  margin: 0;
+  padding: 0;
 }
 
 .table-row {
   display: table-row;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s, font-size 0.3s;
 }
 
 .table-row:nth-child(odd) {
+  color: #000;
   background-color: #f2f2f2;
 }
 
@@ -59,6 +64,20 @@ body {
 
 .table-cell:last-child {
   text-align: left;
+}
+
+.table-row:hover {
+  background-color: #c62828;
+  color: #fff;
+  font-size: larger;
+  transform: scale(1.05);
+}
+
+.table-row:active {
+  background-color: #000;
+  color: #fff;
+  font-size: larger;
+  transform: scale(0.95);
 }
 
 button {
