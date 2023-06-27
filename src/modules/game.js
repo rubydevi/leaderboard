@@ -1,10 +1,9 @@
 import baseURL from './base.js';
 
 let gameId = '';
+const status = document.getElementById('submitStatus');
 
 const submitStatus = () => {
-  const status = document.getElementById('submitStatus');
-  status.innerHTML = '';
   status.classList.add('success-status');
   status.innerHTML = 'Successfully submitted';
 };
@@ -30,6 +29,7 @@ export const createGame = async () => {
 
 export const fetchScores = async () => {
   try {
+    status.innerHTML = '';
     const response = await fetch(`${baseURL}games/${gameId}/scores/`);
     const data = await response.json();
     const scoreList = document.getElementById('scoreList');
