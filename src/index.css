@@ -40,9 +40,6 @@ body {
 .table {
   display: table;
   width: 100%;
-
-  /* border-collapse: collapse;
-  border: 2px solid; */
   margin: 0;
   padding: 0;
 }
