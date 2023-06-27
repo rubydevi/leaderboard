@@ -16,8 +16,9 @@ body {
 }
 
 .main-title {
-  padding: 2% 10%;
+  padding: 0 10%;
   font-size: 3em;
+  margin: 0;
 }
 
 .leaderboard {
